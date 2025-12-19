@@ -2,9 +2,10 @@ import React from 'react'
 import './Home.css'
 import Navbar from '../../components/Navbar/Navbar'
 
-import hero_title from 'src/assets/hero_title.png'
-import play_icon from 'src/assets/play_icon.png'
-import info_icon from 'src/assets/info_icon.png'
+import hero_title from "../../assets/hero_title.png";
+
+import play_icon from '../../assets/play_icon.png'
+import info_icon from '../../assets/info_icon.png'
 import TitleCards from '../../components/TitleCards/TitleCards'
 import Footer from '../../components/Footer/Footer'
 
