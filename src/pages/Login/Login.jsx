@@ -1,8 +1,10 @@
 import React, { useState } from 'react'
 import './Login.css'
-import logo from '/Users/rohan/diablo_stream/src/assets/logo.png'
-import {login, signup} from '/Users/rohan/diablo_stream/src/firebase'
-import netflix_spinner from '/Users/rohan/diablo_stream/src/assets/netflix_spinner.gif'
+import logo from "../../assets/logo.png";
+
+import { login, signup } from "../../firebase";
+
+
 
 
 const Login = () => {

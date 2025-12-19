@@ -1,10 +1,10 @@
 import React from 'react'
 import './Home.css'
 import Navbar from '../../components/Navbar/Navbar'
-import hero_banner from '/Users/rohan/diablo_stream/public/hero_banner.jpg'
-import hero_title from '/Users/rohan/diablo_stream/src/assets/hero_title.png'
-import play_icon from '/Users/rohan/diablo_stream/src/assets/play_icon.png'
-import info_icon from '/Users/rohan/diablo_stream/src/assets/info_icon.png'
+
+import hero_title from 'src/assets/hero_title.png'
+import play_icon from 'src/assets/play_icon.png'
+import info_icon from 'src/assets/info_icon.png'
 import TitleCards from '../../components/TitleCards/TitleCards'
 import Footer from '../../components/Footer/Footer'
 
@@ -13,7 +13,7 @@ const Home = () => {
     <div className='home'>
       <Navbar/>
       <div className="hero">
-        <img src={hero_banner} alt="" className ='banner-img' />
+        <img src="/hero_banner.jpg" alt="" className ='banner-img' />
         <div className="hero-caption">
             <img src={hero_title} alt="" className = 'caption-img' />
             <p>Watch the Epic Adventure Now</p>
