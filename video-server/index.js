@@ -6,6 +6,9 @@ import path from "path";
 const app = express();
 app.use(cors());
 
+const PORT = process.env.PORT || 8000;
+
+// absolute path to videos folder
 const VIDEOS_DIR = path.join(process.cwd(), "videos");
 
 app.get("/", (req, res) => {
@@ -49,6 +52,6 @@ app.get("/videos/:filename", (req, res) => {
   }
 });
 
-app.listen(8000, () => {
-  console.log("Backend running on http://localhost:8000");
+app.listen(PORT, () => {
+  console.log(`Backend running on port ${PORT}`);
 });
