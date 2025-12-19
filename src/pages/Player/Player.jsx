@@ -13,6 +13,9 @@ const Player = () => {
     return <h2 style={{ color: "white" }}>Video not found</h2>;
   }
 
+  console.log("VIDEO URL =>", video.videoUrl);
+
+
   return (
     <div className="player">
       {/* Back button */}

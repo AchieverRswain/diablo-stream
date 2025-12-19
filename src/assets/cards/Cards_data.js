@@ -20,7 +20,7 @@ import doraemon_dorabian_nights from './doraemon_dorabian_nights.jpg';
 import doraemon_nobita_in_hara_hara_planet from './doraemon_nobita_in_hara_hara_planet.jpg'
 
 
-const R2_BASE = "https://pub-5fa903619c82494a82defc6fddf9ec78.r2.dev";
+
 
 const cards_data = [
   {
@@ -45,13 +45,13 @@ const cards_data = [
     id: "doraemon_steel_troops",
     image: doraemon_steel_troops,
     name: "Doraemon Steel Troops",
-    videoUrl: `${R2_BASE}/Doraemon_steel_troops.mp4`,
+    videoUrl: "https://pub-5fa903619c82494a82defc6fddf9ec78.r2.dev/Doraemon_steel_troops.mp4"
   },
   {
     id: "doraemon_dorabian_nights",
     image: doraemon_dorabian_nights,
     name: "Doraemon Dorabian Nights",
-    videoUrl: `${R2_BASE}/Doraemon_dorabian_nights.mp4`,
+    videoUrl: "https://pub-5fa903619c82494a82defc6fddf9ec78.r2.dev/Doraemon_dorabian_nights.mp4"
   },
   {
     id: "doraemon_hara_hara_planet",
