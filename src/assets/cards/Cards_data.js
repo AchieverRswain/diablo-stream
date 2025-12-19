@@ -20,90 +20,92 @@ import doraemon_dorabian_nights from './doraemon_dorabian_nights.jpg';
 import doraemon_nobita_in_hara_hara_planet from './doraemon_nobita_in_hara_hara_planet.jpg'
 
 
+const R2_BASE = "https://pub-5fa903619c82494a82defc6fddf9ec78.r2.dev";
+
 const cards_data = [
   {
     id: "shinchan_bungle_in_the_jungle",
     image: shinchan_bungle_in_the_jungle,
     name: "Shinchan Bungle In The Jungle",
-    videoId: "movie1.mp4",
+    videoUrl: `${R2_BASE}/movie1.mp4`,
   },
   {
     id: "shinchan_in_henderland",
     image: shinchan_in_henderland,
     name: "Shinchan In Henderland",
-    videoId: "shinchan_in_henderland.mp4",
+    videoUrl: `${R2_BASE}/shinchan_in_henderland.mp4`,
   },
   {
     id: "shinchan_sword_and_shield",
     image: shinchan_sword_and_shield,
     name: "Shinchan Sword And Shield",
-    videoId: "shinchan_sword_and_shield.mp4",
+    videoUrl: `${R2_BASE}/shinchan_sword_and_shield.mp4`,
   },
   {
     id: "doraemon_steel_troops",
     image: doraemon_steel_troops,
     name: "Doraemon Steel Troops",
-    videoId: "doraemon_steel_troops.mp4",
+    videoUrl: `${R2_BASE}/Doraemon_steel_troops.mp4`,
   },
   {
     id: "doraemon_dorabian_nights",
     image: doraemon_dorabian_nights,
     name: "Doraemon Dorabian Nights",
-    videoId: "doraemon_dorabian_nights.mp4",
+    videoUrl: `${R2_BASE}/Doraemon_dorabian_nights.mp4`,
   },
   {
     id: "doraemon_hara_hara_planet",
     image: doraemon_nobita_in_hara_hara_planet,
     name: "Doraemon Nobita in Hara Hara Planet",
-    videoId: "doraemon_hara_hara_planet.mp4",
+    videoUrl: `${R2_BASE}/doraemon_hara_hara_planet.mp4`,
   },
   {
     id: "the_railway_men",
     image: card_img7,
     name: "The Railway MEN",
-    videoId: "the_railway_men.mp4",
+    videoUrl: `${R2_BASE}/the_railway_men.mp4`,
   },
   {
     id: "young_sheldon",
     image: card_img8,
     name: "Young Sheldon",
-    videoId: "young_sheldon.mp4",
+    videoUrl: `${R2_BASE}/young_sheldon.mp4`,
   },
   {
     id: "sacred_games",
     image: card_img9,
     name: "Sacred Games",
-    videoId: "sacred_games.mp4",
+    videoUrl: `${R2_BASE}/sacred_games.mp4`,
   },
   {
     id: "adipurush",
     image: card_img10,
     name: "Adipurush",
-    videoId: "adipurush.mp4",
+    videoUrl: `${R2_BASE}/adipurush.mp4`,
   },
   {
     id: "sukhee",
     image: card_img11,
     name: "Sukhee",
-    videoId: "sukhee.mp4",
+    videoUrl: `${R2_BASE}/sukhee.mp4`,
   },
   {
     id: "mission_ganj",
     image: card_img12,
     name: "Mission Ganj",
-    videoId: "mission_ganj.mp4",
+    videoUrl: `${R2_BASE}/mission_ganj.mp4`,
   },
   {
     id: "leo",
     image: card_img13,
     name: "Leo",
-    videoId: "leo.mp4",
+    videoUrl: `${R2_BASE}/leo.mp4`,
   },
   {
     id: "all_of_us_are_dead",
     image: card_img14,
     name: "All of Us Are Dead",
-    videoId: "all_of_us_are_dead.mp4",
+    videoUrl: `${R2_BASE}/all_of_us_are_dead.mp4`,
   },
 ];
 
