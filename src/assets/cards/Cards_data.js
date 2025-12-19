@@ -17,7 +17,8 @@ import shinchan_bungle_in_the_jungle from './shinchan_bungle_in_the_jungle.webp'
 import shinchan_in_henderland from './shinchan_in_henderland.webp';
 import doraemon_steel_troops from './doraemon_steel_troops.jpg';
 import doraemon_dorabian_nights from './doraemon_dorabian_nights.jpg';
-import doraemon_nobita_in_hara_hara_planet from './doraemon_nobita_in_hara_hara_planet.jpg'
+import doraemon_nobita_in_hara_hara_planet from './doraemon_nobita_in_hara_hara_planet.jpg';
+import la_la_land from './la_la_land.png';
 
 
 
@@ -60,10 +61,10 @@ const cards_data = [
     videoUrl: "https://pub-5fa903619c82494a82defc6fddf9ec78.r2.dev/doraemon_steel_troops.mp4",
   },
   {
-    id: "the_railway_men",
-    image: card_img7,
-    name: "The Railway MEN",
-    videoUrl: "https://pub-5fa903619c82494a82defc6fddf9ec78.r2.dev/doraemon_steel_troops.mp4",
+    id: "la_la_land",
+    image: la_la_land,
+    name: "La La Land",
+    videoUrl: "https://pub-5fa903619c82494a82defc6fddf9ec78.r2.dev/la_la_land.mp4",
   },
   {
     id: "young_sheldon",
