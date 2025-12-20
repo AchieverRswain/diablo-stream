@@ -82,6 +82,12 @@
     transition: 0.5s ease-in-out;
 }
 
+
+.logox{
+   height: 40px;
+   width : 100px;
+}
+
 @media(max-width: 800px){
     .navbar{
         padding:20px 4%;

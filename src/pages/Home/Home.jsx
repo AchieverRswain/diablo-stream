@@ -14,9 +14,9 @@ const Home = () => {
     <div className='home'>
       <Navbar/>
       <div className="hero">
-        <img src="/hero_banner.jpg" alt="" className ='banner-img' />
+        <img src="/ben_10.JPG" alt="" className ='banner-img' />
         <div className="hero-caption">
-            <img src={hero_title} alt="" className = 'caption-img' />
+            
             <p>Watch the Epic Adventure Now</p>
             <div className="hero-btns">
             <button className='btn'><img src={play_icon} alt=""/>Play</button>

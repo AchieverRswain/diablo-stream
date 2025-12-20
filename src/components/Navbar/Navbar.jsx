@@ -1,9 +1,9 @@
 import React, { useEffect, useRef } from 'react'
 import './Navbar.css'
-import logo from '../../assets/logo.png'
+import logo from '../../assets/logoxx.jpg'
 import search__icon from '../../assets/search_icon.svg'
 import bell__icon from '../../assets/bell_icon.svg'
-import profile__img from '../../assets/profile_img.png'
+import profile__img from '../../assets/cards/IMG_5895.PNG'
 import caret_icon from '../../assets/caret_icon.svg'
 import { logout } from '../../firebase'
 
@@ -25,7 +25,7 @@ window.addEventListener('scroll', () => {
   return (
     <div ref={navRef} className='navbar'>
      <div className="navbar-left">
-      <img src={logo} alt="" />
+      <img src={logo} alt="9 Stream" className='logox' />
       <ul>
         <li>Home</li>
         <li>Animes</li>
