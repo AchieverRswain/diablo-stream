@@ -17,7 +17,7 @@ const Home = () => {
         <img src="/ben_10.JPG" alt="" className ='banner-img' />
         <div className="hero-caption">
             
-            <p>Watch the Epic Adventure Now</p>
+            <p className='main_hero_caption'>Watch the Epic Adventure Now</p>
             <div className="hero-btns">
             <button className='btn'><img src={play_icon} alt=""/>Play</button>
             <button className='btn dark-btn'><img src={info_icon} alt=""/>More Info</button>

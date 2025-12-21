@@ -1,50 +1,108 @@
-.title-cards{
-margin-top: 50px;
-margin-bottom: 30px;
+@keyframes borderPulse {
+    0% {
+        box-shadow: 0 0 0 3px rgba(255, 255, 255, 1), 0 10px 40px rgba(0, 0, 0, 0.6);
+    }
+    50% {
+        box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.4), 0 10px 40px rgba(0, 0, 0, 0.4);
+    }
+    100% {
+        box-shadow: 0 0 0 3px rgba(255, 255, 255, 1), 0 10px 40px rgba(0, 0, 0, 0.6);
+    }
 }
 
-.title-cards h2{
-    margin-bottom: 8px;
-    
+
+
+
+
+.card-list {
+    display: flex;
+    gap: 18px;
+    overflow-x: auto;
+    padding: 60px 20px; /* Extra padding is MANDATORY for the lift and tilt */
+    margin-top: -40px;
+    perspective: 1200px; /* The 'camera' distance from the cards */
+    align-items: center;
 }
-
-.card-list{
-    display:flex;
-    gap: 10px;
-        overflow-x :scroll;
-
-}
-
-.card-list::-webkit-scrollbar{
+.card-list::-webkit-scrollbar {
     display: none;
 }
 
-.card-list img{
+.card-list .card {
+    position: relative;
     width: 240px;
-    border-radius: 4px;
+    border-radius: 17px;
     cursor: pointer;
-
+    flex-shrink: 0;
     
+    /* This allows the card to move in 3D space */
+    transform-style: preserve-3d;
+   
+    will-change: transform, box-shadow;
+    
+    /* Combined transition for everything */
+    transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.4s ease;
 }
 
-.card-list .card{
-    position: relative;
+.card-list .card img {
+    width: 100%;
+    display: block;
+    border-radius: 17px;
+    /* Optional: helps the 3D rendering */
+    backface-visibility: hidden; 
+}
+
+/* THE GOOGLE TV EFFECT */
+.card-list .card:hover {
+    z-index: 100 !important;
+    
+    /* We combine ALL movements into ONE transform property */
+    /* If they are separate lines, only the last one works */
+    transform: translateY(-20px) scale(1.1) rotateX(5deg) rotateY(2deg) !important;
+    
+    box-shadow: 
+        0 0 0 3px white,              /* The White Border */
+        0 20px 40px rgba(0, 0, 0, 0.7); /* The Lifted Shadow */
+        animation: borderPulse 2s infinite ease-in-out;
+}
+
+/* Optional: Adding the Dynamic Colored Glow */
+/* If you want the glow to match the image, you need a pseudo-element */
+.card-list .card::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    border-radius: 17px;
+    background: inherit; /* Requires background-image on the .card div */
+    z-index: -1;
+    transition: opacity 0.4s;
+    opacity: 0;
+}
+
+.card-list .card:hover::before {
+    opacity: 1;
+    filter: blur(20px);
+    transform: scale(1.1);
 }
 
 .card-list .card p{
-    position: absolute;
-    bottom: 8px;
-    left: 8px;
-    font-size: 14px;
-    font-weight: 600;
-    text-shadow: 5px 5px 15px black;
-    text-decoration: none;
-    color: white;
-    
-   
+
+position: absolute;
+
+bottom: 8px;
+
+left: 8px;
+
+font-size: 14px;
+
+font-weight: 600;
+
+text-shadow: 5px 5px 100px black;
+
+text-decoration: none;
+
+color: white;
+
+
+
 }
 
-.card-list .card:hover{
-    transform: scale(1.1);
-    transition: transform 0.4s ease-in-out;
-}

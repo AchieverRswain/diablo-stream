@@ -12,10 +12,18 @@ const Footer = () => {
   return (
     <div className='footer'>
       <div className="footer-icons">
-        <img src={facebook_icon} alt="" />
-        <img src={instagram_icon} alt="" />
-        <img src={twitter_icon} alt="" />
-        <img src={youtube_icon} alt="" />
+        <a href="https://www.facebook.com/rohan.swain.is.crazy.achiever" target="_blank" rel="noreferrer" className="icon-wrapper">
+            <img src={facebook_icon} alt="Facebook" />
+        </a>
+        <a href="https://www.instagram.com/crazyachiever" target="_blank" rel="noreferrer" className="icon-wrapper">
+            <img src={instagram_icon} alt="Instagram" />
+        </a>
+        <a href="https://x.com/RohanSwain16" target="_blank" rel="noreferrer" className="icon-wrapper">
+            <img src={twitter_icon} alt="Twitter" />
+        </a>
+        <a href="https://youtube.com/@achievervnitnagpur-y5d?si=qRRmvUvcJDFzMZ38" target="_blank" rel="noreferrer" className="icon-wrapper">
+            <img src={youtube_icon} alt="YouTube" />
+        </a>
       </div>
       <ul>
         <li>Help Center</li>

@@ -1,14 +1,26 @@
-.navbar{
+.navbar {
     width: 100%;
     display: flex;
     justify-content: space-between;
     padding: 20px 6%;
     position: fixed;
     font-size: 14px;
-    color: #d1d1d1;
-    background-image: linear-gradient(180deg,rgba(0,0,0,0.7)25%,transparent) ;
-    z-index: 1;
-
+    color: #ffffff; /* Use pure white for better contrast */
+    
+    background: linear-gradient(
+        to bottom, 
+        rgba(0, 0, 0, 0.9) 0%,   /* Very dark at the top */
+        rgba(0, 0, 0, 0.4) 60%,
+          /* Softening through the text area */
+        transparent 100%         /* Invisible by the time it hits Ben 10's face */
+    );
+    
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+.navbar-left ul li:first-child {
+    color: #fff;
+    font-weight: 700;
 }
 .navbar-left{
     display: flex;
@@ -25,12 +37,32 @@
     display: flex;
     list-style: none;
     gap: 20px;
+    filter: drop-shadow(0 0 2px rgba(0,0,0,0.5));
 }
 
 .navbar-left ul li{
-    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+.navbar-left ul li::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: -100%; /* Start off-screen */
+    width: 100%;
+    height: 2px;
+    background: #C41230;
+    transition: left 0.3s ease-in-out;
 }
 
+.navbar-left ul li:hover::after {
+    left: 0; /* Slides in from the left */
+}
+.navbar-left ul li:hover {
+    color: #ffffff;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    transform: translateY(-1px);
+}
 .navbar-right{
     display: flex;
     align-items: center;
@@ -78,8 +110,11 @@
 }
 
 .nav-dark{
-    background: #141414;
-    transition: 0.5s ease-in-out;
+  background-color: rgba(20, 20, 20, 0.85); /* Semi-transparent dark */
+    backdrop-filter: blur(10px); /* This creates the premium frosted glass look */
+    -webkit-backdrop-filter: blur(10px); /* For Safari support */
+    padding: 12px 6%; /* Optional: Shrink the navbar slightly on scroll for a cool effect */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Subtle divider */
 }
 
 
